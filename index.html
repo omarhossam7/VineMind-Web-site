@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VineMind</title>
+<link rel="icon" href="data:image/jpeg;base64,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"image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            color: white;
+            background-color: #0b1a2d;
+        }
+
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        
+        .bg-image {
+            width: 100%;
+            height: 100vh;
+            background: url(https://static.vecteezy.com/system/resources/thumbnails/068/249/666/small/a-green-leaf-growing-on-a-stone-wall-photo.jpg) no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .bg-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+        }
+
+        .header {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 90px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 38px;
+            margin-top: 15px;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        button {
+            margin: 10px;
+            padding: 22px 40px;
+            font-size: 26px;
+            border: none;
+            border-radius: 15px;
+            background-color: #1f3b5c;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.2);
+            background-color: #3c6ea8;
+        }
+
+        
+        .page {
+            display: none;
+            text-align: center;
+            min-height: 100vh;
+            padding-top: 120px;
+            background-color: inherit;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        table {
+            margin: auto;
+            margin-top: 30px;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+
+        th, td {
+            border: 2px solid currentColor;
+            padding: 12px 20px;
+        }
+
+        .topbar {
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div id="home" class="page active">
+
+    <div class="bg-image">
+
+        <div class="buttons">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('dht')">DHT22</button>
+            <button onclick="showPage('soil')">Soil</button>
+            <button onclick="showPage('ldr')">LDR</button>
+            <button onclick="toggleMode()">Light/Dark</button>
+        </div>
+
+        <div class="header">
+            <h1>Smart Agriculture</h1>
+            <p>Monitoring System</p>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="dht" class="page">
+    <div class="topbar">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="toggleMode()">Light/Dark</button>
+    </div>
+
+    <h2>DHT22 Temperature Sensor</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Temperature</th>
+        </tr>
+        <tr><td>Day 1-1</td><td>19</td></tr>
+        <tr><td>Day 1-2</td><td>28</td></tr>
+        <tr><td>Day 1-3</td><td>16</td></tr>
+        <tr><td>Day 2-1</td><td>21</td></tr>
+        <tr><td>Day 2-2</td><td>33</td></tr>
+        <tr><td>Day 2-3</td><td>17</td></tr>
+        <tr><td>Day 3-1</td><td>20</td></tr>
+        <tr><td>Day3-2</td><td>29</td></tr>
+        <tr><td>Day 3-3</td><td>15</td></tr>
+        <tr><td>Day4-1</td><td>22</td></tr>
+        <tr><td>Day 4-2</td><td>31</td></tr>
+        <tr><td>Day 4-3</td><td>18</td></tr>
+        <tr><td>Day 5-1</td><td>19</td></tr>
+        <tr><td>Day 5-2</td><td>27</td></tr>
+        <tr><td>Day 5-3</td><td>16</td></tr>
+    </table>
+</div>
+
+
+<div id="soil" class="page">
+    <div class="topbar">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="toggleMode()">Light/Dark</button>
+    </div>
+
+    <h2>Soil Moisture Sensor</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Moisture</th>
+        </tr>
+        <tr><td>Day 1-1</td><td>750</td></tr>
+        <tr><td>Day 1-2</td><td>410</td></tr>
+        <tr><td>Day 1-3</td><td>400</td></tr>
+        <tr><td>Day 2-1</td><td>380</td></tr>
+        <tr><td>Day 2-2</td><td>690</td></tr>
+        <tr><td>Day 2-3</td><td>660</td></tr>
+        <tr><td>Day 3-1</td><td>810</td></tr>
+        <tr><td>Day3-2</td><td>440</td></tr>
+        <tr><td>Day 3-3</td><td>420</td></tr>
+        <tr><td>Day4-1</td><td>400</td></tr>
+        <tr><td>Day 4-2</td><td>670</td></tr>
+        <tr><td>Day 4-3</td><td>655</td></tr>
+        <tr><td>Day 5-1</td><td>790</td></tr>
+        <tr><td>Day 5-2</td><td>420</td></tr>
+        <tr><td>Day 5-3</td><td>405</td></tr>
+    </table>
+</div>
+
+
+<div id="ldr" class="page">
+    <div class="topbar">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="toggleMode()">Light/Dark</button>
+    </div>
+
+    <h2>LDR Light Intensity Sensor</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Light</th>
+        </tr>
+        <tr><td>Day 1-1</td><td>420</td></tr>
+        <tr><td>Day 1-2</td><td>920</td></tr>
+        <tr><td>Day 1-3</td><td>130</td></tr>
+        <tr><td>Day 2-1</td><td>480</td></tr>
+        <tr><td>Day 2-2</td><td>980</td></tr>
+        <tr><td>Day 2-3</td><td>110</td></tr>
+        <tr><td>Day 3-1</td><td>450</td></tr>
+        <tr><td>Day3-2</td><td>890</td></tr>
+        <tr><td>Day 3-3</td><td>100</td></tr>
+        <tr><td>Day4-1</td><td>510</td></tr>
+        <tr><td>Day 4-2</td><td>940</td></tr>
+        <tr><td>Day 4-3</td><td>150</td></tr>
+        <tr><td>Day 5-1</td><td>460</td></tr>
+        <tr><td>Day 5-2</td><td>860</td></tr>
+        <tr><td>Day 5-3</td><td>120</td></tr>
+    </table>
+</div>
+
+
+<script>
+    function showPage(pageId) {
+        let pages = document.querySelectorAll('.page');
+        pages.forEach(p => p.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+    }
+
+    function toggleMode() {
+        document.body.classList.toggle('light');
+    }
+</script>
+
+</body>
+
+</html>
+        
